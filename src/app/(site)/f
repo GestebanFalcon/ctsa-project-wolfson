@@ -1,0 +1,66 @@
+// /src/app/page.tsx
+
+import React from "react";
+
+export default function InfoPage() {
+  return (
+    <main className="min-h-screen bg-gray-100 flex flex-col items-center p-6">
+      <div className="w-full max-w-3xl">
+        {/* Header Section */}
+        <header className="text-center mb-8">
+          <h1 className="text-4xl font-bold text-gray-800">
+            Welcome to Our AI Image Classifier
+          </h1>
+          <p className="mt-4 text-gray-600">
+            Leverage cutting-edge AI to classify your images efficiently and accurately.
+          </p>
+        </header>
+
+        {/* About Section */}
+        <section className="bg-white shadow-md rounded-lg p-6 mb-8">
+          <h2 className="text-2xl font-semibold text-gray-700 mb-4">How It Works</h2>
+          <p className="text-gray-600 mb-4">
+            Our system takes in labeled images to train an AI model that can classify new images based on your
+            predefined classes. Powered by TensorFlow.js, this tool provides fast and seamless predictions.
+          </p>
+          <ul className="list-disc pl-5 text-gray-600">
+            <li>Upload images with associated labels.</li>
+            <li>Train the AI model in your browser or on the cloud.</li>
+            <li>Predict results for new images in real time.</li>
+          </ul>
+        </section>
+
+        {/* Features Section */}
+        <section className="bg-white shadow-md rounded-lg p-6">
+          <h2 className="text-2xl font-semibold text-gray-700 mb-4">Features</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="p-4 bg-blue-50 rounded-md">
+              <h3 className="font-bold text-blue-600">Real-Time Predictions</h3>
+              <p className="text-gray-600">
+                Get accurate and instant predictions for your images using our trained model.
+              </p>
+            </div>
+            <div className="p-4 bg-green-50 rounded-md">
+              <h3 className="font-bold text-green-600">Customizable Classes</h3>
+              <p className="text-gray-600">
+                Define your own classes to ensure the model suits your unique needs.
+              </p>
+            </div>
+            <div className="p-4 bg-yellow-50 rounded-md">
+              <h3 className="font-bold text-yellow-600">Interactive Interface</h3>
+              <p className="text-gray-600">
+                Our intuitive interface makes training and predictions simple and efficient.
+              </p>
+            </div>
+            <div className="p-4 bg-red-50 rounded-md">
+              <h3 className="font-bold text-red-600">Deploy Anywhere</h3>
+              <p className="text-gray-600">
+                Easily deploy your trained model to any platform using TensorFlow.js.
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+  );
+}
