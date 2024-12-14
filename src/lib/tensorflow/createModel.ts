@@ -4,6 +4,19 @@ export default function createModel(length: number) {
     const model = tf.sequential();
 
     model.add(
+        tf.layers.conv2d({
+            inputShape: [32, 32, 3],
+            filters: 32,
+            kernelSize: 3,
+            activation: "relu"
+        })
+    )
+    model.add(
+        tf.layers.maxPooling2d({
+            poolSize: [2, 2]
+        })
+    )
+    model.add(
         tf.layers.flatten({ inputShape: [32, 32] })
     )
     model.add(
